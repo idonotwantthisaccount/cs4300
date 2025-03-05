@@ -25,8 +25,24 @@ SECRET_KEY = 'django-insecure-n4_zimz*mbgy00w%mwfo-bdie50ml_hchbg6(-*&f5ob7$zv2s
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# Update ALLOWED_HOSTS as requested
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'editor-test-5.devedu.io',
+    'app-test-5.devedu.io',
+    'app-test-5.devedu.io/admin',
+    'editor-test-5.devedu.io/proxy',
+    'editor-test-5.devedu.io/proxy/8000',
+]
 
+# Add CSRF_TRUSTED_ORIGINS as requested
+CSRF_TRUSTED_ORIGINS = [
+    'https://editor-test-5.devedu.io',
+    'https://editor-test-5.devedu.io/proxy',
+    'https://app-test-5.devedu.io/admin',
+    'https://app-test-5.devedu.io',
+    'https://editor-test-5.devedu.io/proxy/8000',
+]
 
 # Application definition
 
@@ -37,6 +53,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'bookings'
 ]
 
 MIDDLEWARE = [
@@ -49,7 +66,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'movie_theater_booking.urls'
+ROOT_URLCONF = 'urls'
 
 TEMPLATES = [
     {
@@ -67,7 +84,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'movie_theater_booking.wsgi.application'
+WSGI_APPLICATION = 'wsgi.application'
 
 
 # Database

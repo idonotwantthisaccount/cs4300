@@ -1,0 +1,93 @@
+[
+    {
+      "model": "bookings.movie",
+      "pk": 1,
+      "fields": {
+        "title_text": "Inception",
+        "description_text": "A mind-bending thriller about dreams within dreams.",
+        "release_date": "2010-07-16T00:00:00Z"
+      }
+    },
+    {
+      "model": "bookings.movie",
+      "pk": 2,
+      "fields": {
+        "title_text": "Interstellar",
+        "description_text": "A journey through space and time as humanity searches for a new home.",
+        "release_date": "2014-11-07T00:00:00Z"
+      }
+    },
+    {
+      "model": "bookings.movie",
+      "pk": 3,
+      "fields": {
+        "title_text": "The Dark Knight",
+        "description_text": "Batman faces off against the Joker in a battle for Gotham's soul.",
+        "release_date": "2008-07-18T00:00:00Z"
+      }
+    },
+    {
+      "model": "bookings.movie",
+      "pk": 4,
+      "fields": {
+        "title_text": "Memento",
+        "description_text": "A man with short-term memory loss attempts to track down his wife's murderer.",
+        "release_date": "2000-10-11T00:00:00Z"
+      }
+    },
+    {
+      "model": "bookings.movie",
+      "pk": 5,
+      "fields": {
+        "title_text": "Dunkirk",
+        "description_text": "The evacuation of Allied soldiers from Dunkirk during World War II.",
+        "release_date": "2017-07-21T00:00:00Z"
+      }
+    },
+    {
+      "model": "bookings.movie",
+      "pk": 6,
+      "fields": {
+        "title_text": "The Prestige",
+        "description_text": "Two rival magicians engage in a competitive battle of illusions.",
+        "release_date": "2006-10-20T00:00:00Z"
+      }
+    },
+    {
+      "model": "bookings.movie",
+      "pk": 7,
+      "fields": {
+        "title_text": "Tenet",
+        "description_text": "An agent embarks on a mission to prevent a global catastrophe through time manipulation.",
+        "release_date": "2020-09-03T00:00:00Z"
+      }
+    },
+    {
+      "model": "bookings.movie",
+      "pk": 8,
+      "fields": {
+        "title_text": "Batman Begins",
+        "description_text": "The origin story of Batman, as he begins his crusade against crime.",
+        "release_date": "2005-06-15T00:00:00Z"
+      }
+    },
+    {
+      "model": "bookings.movie",
+      "pk": 9,
+      "fields": {
+        "title_text": "The Dark Knight Rises",
+        "description_text": "Batman returns to face new challenges and threats to Gotham.",
+        "release_date": "2012-07-20T00:00:00Z"
+      }
+    },
+    {
+      "model": "bookings.movie",
+      "pk": 10,
+      "fields": {
+        "title_text": "Following",
+        "description_text": "A young writer follows strangers for inspiration, only to get entangled in a criminal underworld.",
+        "release_date": "1998-09-12T00:00:00Z"
+      }
+    }
+  ]
+  
