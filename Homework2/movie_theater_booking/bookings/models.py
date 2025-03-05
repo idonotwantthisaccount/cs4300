@@ -8,6 +8,9 @@ class Movie(models.Model):
     def __str__(self):
         return self.title_text
 
+    class Meta:
+        app_label = 'bookings'
+
 class Seat(models.Model):
     seat_number = models.IntegerField(default=0)
     booking_status = models.BooleanField(default=False)  
@@ -15,6 +18,9 @@ class Seat(models.Model):
     def __str__(self):
         status = "Booked" if self.booking_status else "Available"
         return f"Seat {self.seat_number} ({status})"
+    
+    class Meta:
+        app_label = 'bookings'
 
 class Booking(models.Model):
     movie = models.CharField(max_length=50)
@@ -25,3 +31,5 @@ class Booking(models.Model):
     def __str__(self):
         return f"{self.user} booked seat {self.seat} for {self.movie}"
 
+    class Meta:
+        app_label = 'bookings'

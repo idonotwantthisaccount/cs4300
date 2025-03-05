@@ -1,24 +1,24 @@
 from rest_framework import viewsets
 from .models import Movie, Seat, Booking
 from .serializers import MovieSerializer, SeatSerializer, BookingSerializer
+from django.shortcuts import render, get_object_or_404, redirect
+from django.contrib.auth.mixins import LoginRequiredMixin
+
 
 # Define API viewsets for CRUD operations
 
-class MovieViewSet(viewsets.ModelViewSet):
+class MovieViewSet(LoginRequiredMixin, viewsets.ModelViewSet):
     queryset = Movie.objects.all()
     serializer_class = MovieSerializer
 
-class SeatViewSet(viewsets.ModelViewSet):
+class SeatViewSet(LoginRequiredMixin, viewsets.ModelViewSet):
     queryset = Seat.objects.all()
     serializer_class = SeatSerializer
 
-class BookingViewSet(viewsets.ModelViewSet):
+class BookingViewSet(LoginRequiredMixin, viewsets.ModelViewSet):
     queryset = Booking.objects.all()
     serializer_class = BookingSerializer
 
-# Optional: If you have template-based views, define them below
-
-from django.shortcuts import render, get_object_or_404, redirect
 
 def movie_list(request):
     movies = Movie.objects.all()

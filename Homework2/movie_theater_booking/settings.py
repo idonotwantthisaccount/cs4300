@@ -28,20 +28,13 @@ DEBUG = True
 # Update ALLOWED_HOSTS as requested
 ALLOWED_HOSTS = [
     '127.0.0.1',
-    'editor-test-5.devedu.io',
     'app-test-5.devedu.io',
-    'app-test-5.devedu.io/admin',
-    'editor-test-5.devedu.io/proxy',
-    'editor-test-5.devedu.io/proxy/8000',
 ]
 
 # Add CSRF_TRUSTED_ORIGINS as requested
 CSRF_TRUSTED_ORIGINS = [
-    'https://editor-test-5.devedu.io',
-    'https://editor-test-5.devedu.io/proxy',
     'https://app-test-5.devedu.io/admin',
     'https://app-test-5.devedu.io',
-    'https://editor-test-5.devedu.io/proxy/8000',
 ]
 
 # Application definition
